@@ -13,7 +13,7 @@ int main(){
         int m,n;
         printf("Renseignez deux nombres: \n");
         scanf("%d%d",&m,&n);
-        pritnf("\n");
+        printf("\n");
         printf("Résulat: %d\n",ackermann(m,n));
         return 0;
 }
