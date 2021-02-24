@@ -11,8 +11,11 @@ int ackermann(int m, int n){
 }
 int main(){
         int m,n;
-        printf("Renseignez deux nombres: \n");
-        scanf("%d%d",&m,&n);
+        printf("Renseignez m: \n");
+        scanf("%d",&m);
+        printf("\n");
+        printf("Renseignez n: \n");
+        scanf("%d",&n);
         printf("\n");
         printf("Résulat: %d\n",ackermann(m,n));
         return 0;
