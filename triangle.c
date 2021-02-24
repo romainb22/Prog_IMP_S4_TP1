@@ -28,7 +28,7 @@ int main(int argc, char* argv[]){
     printf("\n");
     c++;
   }
-  for(a=0;a<atoi(argv[1])*4-1;a++){
+  for(a=0;a<atoi(argv[1])*3;a++){
     printf("-");
   }
   printf("\n");
