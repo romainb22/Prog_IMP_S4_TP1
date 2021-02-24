@@ -16,7 +16,7 @@ int main(int argc, char* argv[]){
     for(b=0;b<atoi(argv[1])/2+1-c;b++){
       printf(" ");
     }
-    for(d=0;d<=c;d++){
+    for(d=0;d<=c*2;d++){
       printf("*");
     }
     printf("\n");
