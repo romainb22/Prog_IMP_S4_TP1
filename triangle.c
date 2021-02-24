@@ -16,11 +16,11 @@ int main(int argc, char* argv[]){
     for(b=0;b<atoi(argv[1])/2+1-c;b++){
       printf(" ");
     }
-    c++;
     for(d=0;d<=c;d++){
       printf("*");
     }
     printf("\n");
+    c++;
   }
   return 0;
 }
