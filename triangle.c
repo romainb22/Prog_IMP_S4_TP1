@@ -16,5 +16,23 @@ int main(int argc, char* argv[]){
     printf("\n");
     c++;
   }
+  for(a=0;a<atoi(argv[1]);a++){
+    printf("-");
+  }
+  printf("\n");
+  for(a=0;a<atoi(argv[1]);a++){
+    draw_line(a);
+  }
   return 0;
+}
+
+void draw_line(int i){
+  int x,y;
+  for (x=0;x<atoi(argv[1])+1-i;x++){
+    printf(" ");
+  }
+  for(y=0;y<=i*2;y++){
+    printf("*");
+  }
+  printf("\n");
 }
