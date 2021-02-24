@@ -3,7 +3,7 @@
 
 void draw_line(int i,int j){
   int x,y;
-  for (x=0;x<atoi(j)+1-i;x++){
+  for (x=0;x<j+1-i;x++){
     printf(" ");
   }
   for(y=0;y<=i*2;y++){
