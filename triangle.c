@@ -48,7 +48,7 @@ int main(int argc, char* argv[]){
   for(a=0;a<atoi(argv[1])*3;a++){
     printf("-");
   }
-  printf("\n");
-    draw_line_rec(0, atoi(argv[1]), atoi(argv[1]));
+  //printf("\n");
+  //draw_line_rec(0, atoi(argv[1]), atoi(argv[1]));
   return 0;
 }
