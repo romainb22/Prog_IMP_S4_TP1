@@ -40,6 +40,7 @@ int main(int argc, char* argv[]){
 
   if(atoi(argv[1])&&atoi(argv[3])){
     a=atoi(argv[1]),b=atoi(argv[3]);
+    printf("%s\n",argv[2]);
     switch (argv[2][0]) {
       case '+':
         printf("%ld\n",addition(a,b));
@@ -47,7 +48,7 @@ int main(int argc, char* argv[]){
       case '-':
         printf("%ld\n",soustraction(a,b));
         break;
-      case '\*':
+      case '*':
         printf("%ld\n",multiplication(a,b));
         break;
       case '/':
@@ -67,7 +68,7 @@ int main(int argc, char* argv[]){
     }
   }
   else{
-    printf("WIP");
+    printf("WIP\n");
   }
 
   return 0;
