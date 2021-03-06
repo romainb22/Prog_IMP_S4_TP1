@@ -38,6 +38,7 @@ int main(int argc, char* argv[]){
     printf("-");
   }
   printf("\n");
+  /* version récursive */
   draw_line_rec(0, atoi(argv[1]), atoi(argv[1]));
   return 0;
 }
