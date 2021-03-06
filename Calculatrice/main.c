@@ -47,7 +47,7 @@ int main(int argc, char* argv[]){
       case '-':
         printf("%ld\n",soustraction(a,b));
         break;
-      case '*':
+      case *:
         printf("%ld\n",multiplication(a,b));
         break;
       case '/':
