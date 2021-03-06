@@ -9,15 +9,15 @@
 #include<stdlib.h>
 #include<stdio.h>
 
-int addition(int x, int y){
+long int addition(int x, int y){
   return x+y;
 }
 
-int soustraction(int x, int y){
+long int soustraction(int x, int y){
   return x-y;
 }
 
-int multiplication(int x, int y){
+long int multiplication(int x, int y){
   return x*y;
 }
 
@@ -27,7 +27,7 @@ float division(int x, int y){
   return a/b;
 }
 
-int puissance(int x, int y){
+long int puissance(int x, int y){
   while(y!=0){
     x*=x;
     y--;
