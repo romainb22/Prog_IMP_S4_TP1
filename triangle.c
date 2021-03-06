@@ -1,17 +1,6 @@
 #include<stdlib.h>
 #include<stdio.h>
 
-void draw_line(int i,int j){
-  int x,y;
-  for (x=0;x<j+1-i;x++){
-    printf(" ");
-  }
-  for(y=0;y<=i*2;y++){
-    printf("*");
-  }
-  printf("\n");
-}
-
 void draw_line_rec(int i,int j,int k){
   int x,y;
   if(i==k){
