@@ -13,7 +13,7 @@
 #include "fonctions_std.h"
 #include "utilitaire.h"
 
-#define NB_FCT 12;
+#define NB_FCT 12
 
 char fct[NB_FCT][10]={"sin","cos","sinh","cosh","tanh","asin","acos","atan","e","ln","log","sqrt"};
 
