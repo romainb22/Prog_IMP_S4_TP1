@@ -54,10 +54,10 @@ double appel_trigo(char* fct, int x){
           return arc_sinus(x);
           break;
         case 'c':
-          return arc_cosinus(x):
+          return arc_cosinus(x);
           break;
         case 't':
-          return arc_tangente(x):
+          return arc_tangente(x);
           break;
         default:
           /*WIP*/
