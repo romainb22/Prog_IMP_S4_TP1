@@ -114,6 +114,10 @@ int main(int argc, char* argv[]){
             break;
         }
       }
+      else{
+        util_commande();
+        return 0;
+      }
     }
   }
   else{
