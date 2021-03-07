@@ -86,6 +86,11 @@ int main(int argc, char* argv[]){
         printf("%s\n", argv[3]);
         printf("%s\n", argv[4]);
         printf("%s\n", argv[5]);
+        printf("%s\n", argv[6]);
+        printf("%s\n", argv[7]);
+        printf("%s\n", argv[8]);
+        printf("%s\n", argv[9]);
+        printf("%s\n", argv[10]);
         a=atoi(argv[1]),b=atoi(argv[4]);
         util_ligne2(argv[1],"*",argv[4]);
         printf("%d\n",multiplication(a,b));
