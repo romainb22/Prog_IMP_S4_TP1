@@ -39,9 +39,18 @@ void util_fonction(){
   int i;
   printf("La fonction que vous avez demandé n'est pas reconnnue.\n");
   printf("Vous avez le choix entre:\n");
-  for(i=0;i<NB_FCT;i++){
-    printf("  - %s\n", fcts[i]);
-  }
+  printf("  - %s\n", fcts[0]);
+  printf("  - %s\n", fcts[1]);
+  printf("  - %s\n", fcts[2]);
+  printf("  - %s\n", fcts[3]);
+  printf("  - %s\n", fcts[4]);
+  printf("  - %s\n", fcts[5]);
+  printf("  - %s\n", fcts[6]);
+  printf("  - %s\n", fcts[7]);
+  printf("  - %s\n", fcts[8]);
+  printf("  - %s\n", fcts[9]);
+  printf("  - %s\n", fcts[10]);
+  printf("  - %s\n", fcts[11]);
   return;
 }
 
