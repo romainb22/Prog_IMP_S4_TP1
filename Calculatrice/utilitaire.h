@@ -12,12 +12,14 @@
 #include<stdlib.h>
 #include<stdio.h>
 
-void util_ligne(char*, int);
+void util_ligne1(char*, char*);
 
-void util_fonction(char*,int);
+void util_ligne2(char*, char*, char*);
+
+void util_fonction();
 
 void util_operation();
 
-void util_commande(char*,int);
+void util_commande();
 
 #endif
