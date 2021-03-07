@@ -54,39 +54,39 @@ int main(int argc, char* argv[]){
       if(atoi(argv[2]) || argv[2][0]=='0'){
         a = atoi(argv[2]);
         if(!strcmp(argv[1],fct[0]) || !strcmp(argv[1],fct[1]) || !strcmp(argv[1],fct[2]) || !strcmp(argv[1],fct[3]) || !strcmp(argv[1],fct[4]) || !strcmp(argv[1],fct[5]) || !strcmp(argv[1],fct[6]) || !strcmp(argv[1],fct[7])){
-          util_ligne(argv,argc);
+          util_ligne(&argv,argc);
           printf("%f\n",appel_trigo(argv[1],a));
         }
         else if(!strcmp(argv[1],fct[8]) || !strcmp(argv[1],fct[9]) || !strcmp(argv[1],fct[10]) || !strcmp(argv[1],fct[11])){
-          util_ligne(argv,argc);
+          util_ligne(&argv,argc);
           printf("%f\n",appel_std(argv[1],a));
         }
       }
       else{
-        util_fonction(fct,NB_FCT);
+        util_fonction(&fct,NB_FCT);
         return 0;
       }
     }
     else{
       if(strcmp(argv[0],argv[2])==0){ /* Quand on met une étoile en paramètre, cela modifie les différents argv */
         a=atoi(argv[1]),b=atoi(argv[4]);
-        util_ligne(argv,argc);
+        util_ligne(&argv,argc);
         printf("%d\n",multiplication(a,b));
       }
       else if((atoi(argv[1]) && atoi(argv[3])) || (argv[1][0]=='0' && atoi(argv[3])) || (argv[3][0]=='0' && atoi(argv[1]))){
         a=atoi(argv[1]),b=atoi(argv[3]);
         switch (argv[2][0]) {
           case '+':
-            util_ligne(argv,argc);
+            util_ligne(&argv,argc);
             printf("%d\n",addition(a,b));
             break;
           case '-':
-            util_ligne(argv,argc);
+            util_ligne(&argv,argc);
             printf("%d\n",soustraction(a,b));
             break;
           case '/':
             if(b){
-              util_ligne(argv,argc);
+              util_ligne(&argv,argc);
               printf("%f\n",division(a,b));
             }
             else{
@@ -94,7 +94,7 @@ int main(int argc, char* argv[]){
             }
             break;
           case '^':
-            util_ligne(argv,argc);
+            util_ligne(&argv,argc);
             printf("%d\n",puissance(a,b));
             break;
           default:
@@ -106,7 +106,7 @@ int main(int argc, char* argv[]){
     }
   }
   else{
-    util_commande(fct,NB_FCT);
+    util_commande(&fct,NB_FCT);
     return 0;
   }
   return 1;
