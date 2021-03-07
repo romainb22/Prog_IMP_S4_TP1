@@ -54,6 +54,7 @@ double appel_trigo(char* fct, int x){
       }
       break;
     }
+    return 0;
 }
 
 /*

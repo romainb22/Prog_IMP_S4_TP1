@@ -14,7 +14,7 @@
 /*
 * On affiche la ligne rentrée initialement, formattée
 */
-void util_ligne(char** argv, int argc){
+void util_ligne(char* argv, int argc){
   if(argc==3){
     printf("%s(%s) = ",argv[1],argv[2]);
   }
@@ -28,7 +28,7 @@ void util_ligne(char** argv, int argc){
 * On affiche la liste des fonctions disponibles
 */
 
-void util_fonction(char** fct,int fctc){
+void util_fonction(char* fct,int fctc){
   int i;
   printf("La fonction que vous avez demandé n'est pas reconnnue.\n");
   printf("Vous avez le choix entre:\n");
@@ -57,7 +57,7 @@ void util_operation(){
 * On affiche l'aide à la commande
 */
 
-void util_commande(char** fct,int fctc){
+void util_commande(char* fct,int fctc){
   int i;
   printf("La commande \"calculer\" s'utilise de deux façon:");
   printf("\n");

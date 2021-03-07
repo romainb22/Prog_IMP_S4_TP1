@@ -30,7 +30,7 @@ double appel_std(char* fct, int x){
       return racine(x);
       break;
   }
-
+  return 0;
 }
 
 /*
