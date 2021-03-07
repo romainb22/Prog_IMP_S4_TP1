@@ -11,16 +11,23 @@
 #include<string.h>
 #include "utilitaire.h"
 
+#define NB_FCT 12
+
+char fct[NB_FCT][10]={"sin","cos","sinh","cosh","tanh","asin","acos","atan","e","ln","log","sqrt"};
+
 /*
-* On affiche la ligne rentrée initialement, formattée
+* On affiche la ligne rentrée initialement, formattée version 1 (fct)
 */
-void util_ligne(char* argv, int argc){
-  if(argc==3){
-    printf("%d(%d) = ",argv[1],argv[2]);
-  }
-  else{
-    printf("%d %d %d = ",argv[1],argv[2],argv[3]);
-  }
+void util_ligne1(char* arg1, char* arg2){
+  printf("%d(%d) = ",arg1,arg2);
+  return;
+}
+
+/*
+* On affiche la ligne rentrée initialement, formattée version 2 (op)
+*/
+void util_ligne1(char* arg1, char* arg2, char* arg3){
+  printf("%d %d %d = ",arg1,arg2,arg3);
   return;
 }
 
@@ -28,11 +35,11 @@ void util_ligne(char* argv, int argc){
 * On affiche la liste des fonctions disponibles
 */
 
-void util_fonction(char* fct,int fctc){
+void util_fonction(){
   int i;
   printf("La fonction que vous avez demandé n'est pas reconnnue.\n");
   printf("Vous avez le choix entre:\n");
-  for(i=0;i<fctc;i++){
+  for(i=0;i<NB_FCT;i++){
     printf("  - %d\n", fct[i]);
   }
   return;
@@ -75,7 +82,7 @@ void util_commande(char* fct,int fctc){
   printf("   /\n");
   printf("   ^\n");
   printf("Liste des fonctions disponibles:\n");
-  for(i=0;i<fctc;i++){
+  for(i=0;i<NB_FCT;i++){
     printf("  - %d\n", fct[i]);
   }
   return;
