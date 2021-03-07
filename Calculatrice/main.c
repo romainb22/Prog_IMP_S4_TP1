@@ -64,6 +64,10 @@ int main(int argc, char* argv[]){
           util_ligne1(argv[1],argv[2]);
           printf("%f\n",appel_std(argv[1],a));
         }
+        else{
+          util_fonction();
+          return 0;
+        }
       }
       else{
         printf("1.1.2\n");
@@ -75,6 +79,7 @@ int main(int argc, char* argv[]){
       printf("1.2\n");
       if(strcmp(argv[0],argv[2])==0){ /* Quand on met une étoile en paramètre, cela modifie les différents argv */
         printf("1.2.1\n");
+        printf("%d\n",argc);
         printf("%s\n", argv[0]);
         printf("%s\n", argv[1]);
         printf("%s\n", argv[2]);
