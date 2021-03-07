@@ -33,7 +33,7 @@ float division(int x, int y){
 }
 
 int puissance(int x, int y){
-  int i,res=x;
+  int res=x;
   if(y==0){
     return 1;
   }
@@ -52,7 +52,7 @@ int main(int argc, char* argv[]){
     a=atoi(argv[1]),b=atoi(argv[4]);
     printf("%d\n",multiplication(a,b));
   }
-  else if(atoi(argv[1]) && atoi(argv[3]) || argv[1][0]=='0' && atoi(argv[3]) || argv[3][0]=='0' && atoi(argv[1])){
+  else if((atoi(argv[1]) && atoi(argv[3])) || (argv[1][0]=='0' && atoi(argv[3])) || (argv[3][0]=='0' && atoi(argv[1]))){
     printf("yu\n");
     a=atoi(argv[1]),b=atoi(argv[3]);
     switch (argv[2][0]) {
