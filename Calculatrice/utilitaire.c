@@ -16,10 +16,10 @@
 */
 void util_ligne(char* argv, int argc){
   if(argc==3){
-    printf("%s(%s) = ",argv[1],argv[2]);
+    printf("%d(%d) = ",argv[1],argv[2]);
   }
   else{
-    printf("%s %s %s = ",argv[1],argv[2],argv[3]);
+    printf("%d %d %d = ",argv[1],argv[2],argv[3]);
   }
   return;
 }
@@ -33,7 +33,7 @@ void util_fonction(char* fct,int fctc){
   printf("La fonction que vous avez demandé n'est pas reconnnue.\n");
   printf("Vous avez le choix entre:\n");
   for(i=0;i<fctc;i++){
-    printf("  - %s\n", fct[i]);
+    printf("  - %d\n", fct[i]);
   }
   return;
 }
@@ -76,7 +76,7 @@ void util_commande(char* fct,int fctc){
   printf("   ^\n");
   printf("Liste des fonctions disponibles:\n");
   for(i=0;i<fctc;i++){
-    printf("  - %s\n", fct[i]);
+    printf("  - %d\n", fct[i]);
   }
   return;
 }
