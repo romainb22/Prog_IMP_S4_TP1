@@ -19,7 +19,7 @@ char fct[NB_FCT][10]={"sin","cos","sinh","cosh","tanh","asin","acos","atan","e",
 * On affiche la ligne rentrée initialement, formattée version 1 (fct)
 */
 void util_ligne1(char* arg1, char* arg2){
-  printf("%d(%d) = ",arg1,arg2);
+  printf("%s(%s) = ",arg1,arg2);
   return;
 }
 
@@ -27,7 +27,7 @@ void util_ligne1(char* arg1, char* arg2){
 * On affiche la ligne rentrée initialement, formattée version 2 (op)
 */
 void util_ligne1(char* arg1, char* arg2, char* arg3){
-  printf("%d %d %d = ",arg1,arg2,arg3);
+  printf("%s %s %s = ",arg1,arg2,arg3);
   return;
 }
 
@@ -40,7 +40,7 @@ void util_fonction(){
   printf("La fonction que vous avez demandé n'est pas reconnnue.\n");
   printf("Vous avez le choix entre:\n");
   for(i=0;i<NB_FCT;i++){
-    printf("  - %d\n", fct[i]);
+    printf("  - %s\n", fct[i]);
   }
   return;
 }
@@ -83,7 +83,7 @@ void util_commande(char* fct,int fctc){
   printf("   ^\n");
   printf("Liste des fonctions disponibles:\n");
   for(i=0;i<NB_FCT;i++){
-    printf("  - %d\n", fct[i]);
+    printf("  - %s\n", fct[i]);
   }
   return;
 }
