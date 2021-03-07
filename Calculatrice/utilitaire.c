@@ -13,7 +13,7 @@
 
 #define NB_FCT 12
 
-char fct[NB_FCT][10]={"sin","cos","sinh","cosh","tanh","asin","acos","atan","e","ln","log","sqrt"};
+char fcts[NB_FCT][10]={"sin","cos","sinh","cosh","tanh","asin","acos","atan","e","ln","log","sqrt"};
 
 /*
 * On affiche la ligne rentrée initialement, formattée version 1 (fct)
@@ -40,7 +40,7 @@ void util_fonction(){
   printf("La fonction que vous avez demandé n'est pas reconnnue.\n");
   printf("Vous avez le choix entre:\n");
   for(i=0;i<NB_FCT;i++){
-    printf("  - %s\n", fct[i]);
+    printf("  - %s\n", fcts[i]);
   }
   return;
 }
