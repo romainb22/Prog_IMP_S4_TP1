@@ -80,7 +80,7 @@ int main(int argc, char* argv[]){
       if(strcmp(argv[0],argv[2])==0){ /* Quand on met une étoile en paramètre, cela modifie les différents argv */
         printf("1.2.1\n");
         a=atoi(argv[1]),b=atoi(argv[10]);
-        util_ligne2(argv[1],"*",argv[3]);
+        util_ligne2(argv[1],"*",argv[10]);
         printf("%d\n",multiplication(a,b));
       }
       else if((atoi(argv[1]) && atoi(argv[3])) || (argv[1][0]=='0' && atoi(argv[3])) || (argv[3][0]=='0' && atoi(argv[1]))){
