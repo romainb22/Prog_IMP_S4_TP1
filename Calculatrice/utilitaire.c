@@ -72,7 +72,7 @@ void util_operation(){
 * On affiche l'aide à la commande
 */
 
-void util_commande(char* fct,int fctc){
+void util_commande(){
   printf("La commande \"calculer\" s'utilise de deux façon:");
   printf("\n");
   printf("    - calculer x op y\n");

@@ -106,7 +106,7 @@ int main(int argc, char* argv[]){
     }
   }
   else{
-    util_commande(*fct,NB_FCT);
+    util_commande();
     return 0;
   }
   return 1;
