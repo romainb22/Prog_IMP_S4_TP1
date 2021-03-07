@@ -12,6 +12,65 @@
 #include<math.h>
 #include "fonction_trigo.h"
 
+/*
+* Détermine et appelle la bonne fonction et renvoie son résulat
+*/
+double appel_trigo(char* fct, int x){
+  switch(fct[0]){
+    case 's':
+      switch(strlen(fct)){
+        case 3:
+          return sinus(x);
+          break;
+        case 4:
+          return sinus_hyperbolique(x);
+          break;
+        default:
+          /*WIP*/
+          return 0;
+          break;
+      }
+      break;
+    case 'c':
+      switch(strlen(fct)){
+        case 3:
+          return cosinus(x);
+          break;
+        case 4:
+          return cosinus_hyperbolique(x);
+          break;
+        default:
+          /*WIP*/
+          return 0;
+          break;
+      }
+      break;
+    case 't':
+      return tangente_hyperbolique(x);
+      break:
+    case 'a':
+      switch(fct[1]){
+        case 's':
+          return arc_sinus(x);
+          break;
+        case 'c':
+          return arc_cosinus(x):
+          break;
+        case 't':
+          return arc_tangente(x):
+          break;
+        default:
+          /*WIP*/
+          return 0;
+          break;
+      }
+      break;
+    default:
+      /*WIP*/
+      return 0;
+      break;
+  }
+}
 
 /*
 * Renvoie le sinus de l'angle x en radians

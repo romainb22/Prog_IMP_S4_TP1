@@ -13,6 +13,31 @@
 #include "fonctions_std.h"
 
 /*
+* Détermine et appelle la bonne fonction et renvoie son résulat
+*/
+double appel_trigo(char* fct, int x){
+  switch(strlen(fct)){
+    case 1:
+      return e(x);
+      break;
+    case 2:
+      return ln(x);
+      break;
+    case 3:
+      return log_dix(x);
+      break;
+    case 4:
+      return racine(x);
+      break;
+    default:
+      /*WIP*/
+      return 0;
+      break;
+  }
+
+}
+
+/*
 * Renvoie e exposant x
 */
 double e(int x){

@@ -12,6 +12,8 @@
 #include<stdlib.h>
 #include<stdio.h>
 
+double appel_trigo(char*, int);
+
 double sinus(int);
 
 double cosinus(int);
