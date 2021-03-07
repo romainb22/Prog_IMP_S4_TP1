@@ -36,7 +36,6 @@ void util_ligne2(char* arg1, char* arg2, char* arg3){
 */
 
 void util_fonction(){
-  int i;
   printf("La fonction que vous avez demandé n'est pas reconnnue.\n");
   printf("Vous avez le choix entre:\n");
   printf("  - %s\n", fcts[0]);
@@ -74,7 +73,6 @@ void util_operation(){
 */
 
 void util_commande(char* fct,int fctc){
-  int i;
   printf("La commande \"calculer\" s'utilise de deux façon:");
   printf("\n");
   printf("    - calculer x op y\n");
@@ -91,8 +89,17 @@ void util_commande(char* fct,int fctc){
   printf("   /\n");
   printf("   ^\n");
   printf("Liste des fonctions disponibles:\n");
-  for(i=0;i<NB_FCT;i++){
-    printf("  - %s\n", fct[i]);
-  }
+  printf("  - %s\n", fcts[0]);
+  printf("  - %s\n", fcts[1]);
+  printf("  - %s\n", fcts[2]);
+  printf("  - %s\n", fcts[3]);
+  printf("  - %s\n", fcts[4]);
+  printf("  - %s\n", fcts[5]);
+  printf("  - %s\n", fcts[6]);
+  printf("  - %s\n", fcts[7]);
+  printf("  - %s\n", fcts[8]);
+  printf("  - %s\n", fcts[9]);
+  printf("  - %s\n", fcts[10]);
+  printf("  - %s\n", fcts[11]);
   return;
 }
