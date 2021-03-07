@@ -25,10 +25,6 @@ double appel_trigo(char* fct, int x){
         case 4:
           return sinus_hyperbolique(x);
           break;
-        default:
-          /*WIP*/
-          return 0;
-          break;
       }
       break;
     case 'c':
@@ -38,10 +34,6 @@ double appel_trigo(char* fct, int x){
           break;
         case 4:
           return cosinus_hyperbolique(x);
-          break;
-        default:
-          /*WIP*/
-          return 0;
           break;
       }
       break;
@@ -59,16 +51,10 @@ double appel_trigo(char* fct, int x){
         case 't':
           return arc_tangente(x);
           break;
-        default:
-          /*WIP*/
-          return 0;
-          break;
       }
       break;
-    default:
-      /*WIP*/
-      return 0;
-      break;
+    }
+    break;
   }
 }
 

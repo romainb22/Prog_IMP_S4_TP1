@@ -29,10 +29,6 @@ double appel_std(char* fct, int x){
     case 4:
       return racine(x);
       break;
-    default:
-      /*WIP*/
-      return 0;
-      break;
   }
 
 }
