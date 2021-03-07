@@ -26,7 +26,7 @@ void util_ligne1(char* arg1, char* arg2){
 /*
 * On affiche la ligne rentrée initialement, formattée version 2 (op)
 */
-void util_ligne1(char* arg1, char* arg2, char* arg3){
+void util_ligne2(char* arg1, char* arg2, char* arg3){
   printf("%s %s %s = ",arg1,arg2,arg3);
   return;
 }
