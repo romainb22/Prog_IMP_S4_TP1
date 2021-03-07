@@ -50,8 +50,11 @@ int puissance(int x, int y){
 int main(int argc, char* argv[]){
   int a,b;
   if(argc >= 3 || argc <= 5){
+    printf("1\n");
     if(argc == 3){
+      printf("1.1\n");
       if(atoi(argv[2]) || argv[2][0]=='0'){
+        printf("1.1.1\n");
         a = atoi(argv[2]);
         if(!strcmp(argv[1],fct[0]) || !strcmp(argv[1],fct[1]) || !strcmp(argv[1],fct[2]) || !strcmp(argv[1],fct[3]) || !strcmp(argv[1],fct[4]) || !strcmp(argv[1],fct[5]) || !strcmp(argv[1],fct[6]) || !strcmp(argv[1],fct[7])){
           util_ligne1(argv[1],argv[2]);
@@ -63,17 +66,27 @@ int main(int argc, char* argv[]){
         }
       }
       else{
+        printf("1.1.2\n");
         util_fonction();
         return 0;
       }
     }
     else{
+      printf("1.2\n");
       if(strcmp(argv[0],argv[2])==0){ /* Quand on met une étoile en paramètre, cela modifie les différents argv */
+        printf("1.2.1\n");
+        printf("%s\n", argv[0]);
+        printf("%s\n", argv[1]);
+        printf("%s\n", argv[2]);
+        printf("%s\n", argv[3]);
+        printf("%s\n", argv[4]);
+        printf("%s\n", argv[5]);
         a=atoi(argv[1]),b=atoi(argv[4]);
         util_ligne2(argv[1],"*",argv[4]);
         printf("%d\n",multiplication(a,b));
       }
       else if((atoi(argv[1]) && atoi(argv[3])) || (argv[1][0]=='0' && atoi(argv[3])) || (argv[3][0]=='0' && atoi(argv[1]))){
+        printf("1.2.2\n");
         a=atoi(argv[1]),b=atoi(argv[3]);
         switch (argv[2][0]) {
           case '+':
@@ -106,6 +119,7 @@ int main(int argc, char* argv[]){
     }
   }
   else{
+    printf("2\n");
     util_commande();
     return 0;
   }
