@@ -97,10 +97,10 @@ int main(int argc, char* argv[]){
         }
       }
     }
-    else{
-      /*WIP*/
-      return 0;
-    }
+  }
+  else{
+    /*WIP*/
+    return 0;
   }
   return 0;
 }
