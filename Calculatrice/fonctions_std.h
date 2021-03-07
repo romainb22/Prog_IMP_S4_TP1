@@ -12,7 +12,7 @@
 #include<stdlib.h>
 #include<stdio.h>
 
-double appel_trigo(char*, int);
+double appel_std(char*, int);
 
 double e(int);
 

@@ -47,7 +47,7 @@ double appel_trigo(char* fct, int x){
       break;
     case 't':
       return tangente_hyperbolique(x);
-      break:
+      break;
     case 'a':
       switch(fct[1]){
         case 's':

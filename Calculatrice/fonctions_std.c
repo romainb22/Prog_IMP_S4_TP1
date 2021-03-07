@@ -15,7 +15,7 @@
 /*
 * Détermine et appelle la bonne fonction et renvoie son résulat
 */
-double appel_trigo(char* fct, int x){
+double appel_std(char* fct, int x){
   switch(strlen(fct)){
     case 1:
       return e(x);
